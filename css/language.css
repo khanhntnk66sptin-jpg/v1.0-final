@@ -1,0 +1,32 @@
+.language-switcher {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+#languageSelect {
+    min-width: 145px;
+    padding: 8px 28px 8px 10px;
+    border: 1px solid var(--border-color, #d8dce5);
+    border-radius: 10px;
+    background-color: var(--card-bg, #ffffff);
+    color: var(--text-color, #263248);
+    font-family: inherit;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#languageSelect:focus {
+    outline: 2px solid #7c6cf2;
+    outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+    .language-switcher {
+        margin: 8px 0;
+    }
+
+    #languageSelect {
+        width: 100%;
+    }
+}

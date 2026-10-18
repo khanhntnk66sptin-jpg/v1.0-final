@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>EduSheet | Kho phiếu bài tập và đề ôn tập</title>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="container nav-inner">
+
+                <a class="brand" href="index.html">
+                    <img src="images/logo-nhom7.png" alt="EduSheet Logo" class="brand-logo">
+                    EduSheet
+                </a>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Mở menu">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <div class="nav-menu" id="navMenu">
+
+                    <a class="nav-link" href="index.html">Trang chủ</a>
+                    <a class="nav-link" href="categories.html">Kho bài tập</a>
+                    <a class="nav-link" href="generator.html">Tạo phiếu</a>
+                    <a class="nav-link" href="faq.html">Hướng dẫn</a>
+                    <a class="nav-link" href="contact.html">Liên hệ</a>
+
+                    <a class="btn btn-primary nav-cta" href="generator.html">
+                        Bắt đầu ngay
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                    <div class="theme-switcher">
+                        <label for="themeSelect" class="visually-hidden">
+                            Chọn giao diện &nbsp; &nbsp;
+                        </label>
+
+                        <select id="themeSelect" class="theme-select" aria-label="Chọn giao diện">
+                            <option value="light">☀️ Sáng</option>
+                            <option value="dark">🌙 Tối</option>
+                            <option value="auto">🌓 Tự động</option>
+                        </select>
+                    </div>
+
+                    <div class="language-switcher">
+                        <label for="languageSelect" class="visually-hidden">
+                            Chọn ngôn ngữ
+                        </label>
+
+                        <select id="languageSelect" class="form-select form-select-sm" aria-label="Chọn ngôn ngữ">
+                            <option value="vi">Tiếng Việt</option>
+                            <option value="en">English</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section class="hero">
+            <div class="container hero-grid">
+
+                <div class="hero-copy reveal">
+
+                    <div class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        CÔNG CỤ HỖ TRỢ GIÁO VIÊN
+                    </div>
+
+                    <h1>
+                        Kho phiếu bài tập<br>
+                        &amp; đề ôn tập
+                        <span class="title-highlight">nhanh chóng</span>
+                    </h1>
+
+                    <p class="hero-lead">
+                        Chuẩn bị tài liệu giảng dạy nhẹ nhàng hơn. Tìm câu hỏi
+                        theo môn học, khối lớp và chủ đề, sau đó tạo phiếu ôn tập
+                        chỉ trong vài bước.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary btn-large" href="generator.html">
+                            Tạo phiếu ngay
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                        <a class="btn btn-outline btn-large" href="categories.html">
+                            <i class="bi bi-search"></i>
+                            Khám phá phiếu bài tập trong trang web
+                        </a>
+                    </div>
+
+                    <div class="hero-trust">
+                        <i class="bi bi-shield-check"></i>
+                        Tiện ích - Dễ sử dụng - Đa dạng bài tập
+                    </div>
+
+                </div>
+
+                <div class="hero-art reveal">
+
+                    <div class="dots dots-top"></div>
+
+                    <div class="dashboard">
+
+                        <div class="dash-top">
+
+                            <div class="dash-brand">
+                                <span class="mini-mark">
+                                    <i class="bi bi-journal-check"></i>
+                                </span>
+
+                                <div>
+                                    <strong>Không gian cho giáo viên</strong>
+                                    <small>EDUSHEET WORKSPACE</small>
+                                </div>
+                            </div>
+
+                            <span class="status">
+                                <i></i>
+                                Sẵn sàng
+                            </span>
+
+                        </div>
+
+                        <div class="dash-banner">
+
+                            <div>
+                                <small>TRỢ LÝ CHUẨN BỊ BÀI</small>
+
+                                <h2>
+                                    Tiết học tốt<br>
+                                    khởi đầu từ đây
+                                </h2>
+
+                                <p>
+                                    Tài liệu phù hợp, dễ dàng chuẩn bị
+                                </p>
+                            </div>
+
+                            <div class="banner-illustration">
+                                <i class="bi bi-mortarboard-fill"></i>
+                                <span>✦</span>
+                            </div>
+
+                        </div>
+
+                        <div class="dash-section-title">
+                            <strong>Công cụ của bạn</strong>
+                            <span>Truy cập nhanh</span>
+                        </div>
+
+                        <div class="dash-grid">
+
+                            <a href="categories.html" class="dash-item">
+                                <span class="dash-icon blue">
+                                    <i class="bi bi-collection"></i>
+                                </span>
+                                <b>Kho câu hỏi</b>
+                                <small>Tìm tài liệu</small>
+                            </a>
+
+                            <a href="generator.html" class="dash-item">
+                                <span class="dash-icon yellow">
+                                    <i class="bi bi-magic"></i>
+                                </span>
+                                <b>Tạo phiếu</b>
+                                <small>Chọn câu hỏi</small>
+                            </a>
+
+                            <a href="faq.html" class="dash-item">
+                                <span class="dash-icon green">
+                                    <i class="bi bi-lightbulb"></i>
+                                </span>
+                                <b>Hướng dẫn</b>
+                                <small>Cách sử dụng</small>
+                            </a>
+
+                            <a href="contact.html" class="dash-item">
+                                <span class="dash-icon purple">
+                                    <i class="bi bi-chat-square-text"></i>
+                                </span>
+                                <b>Đóng góp</b>
+                                <small>Gửi câu hỏi</small>
+                            </a>
+
+                        </div>
+
+                        <div class="dash-bottom">
+
+                            <span class="check-circle">
+                                <i class="bi bi-check-lg"></i>
+                            </span>
+
+                            <div>
+                                <b>Sẵn sàng cho tiết học mới!</b>
+                                <small>
+                                    Chọn công cụ để bắt đầu công việc.
+                                </small>
+                            </div>
+
+                            <i class="bi bi-three-dots"></i>
+
+                        </div>
+
+                    </div>
+
+                    <div class="float-note note-top">
+                        <span class="note-icon yellow">
+                            <i class="bi bi-lightning-charge-fill"></i>
+                        </span>
+
+                        <div>
+                            <b>Tạo phiếu nhanh</b>
+                            <small>Tiết kiệm thời gian</small>
+                        </div>
+                    </div>
+
+                    <div class="float-note note-bottom">
+                        <span class="note-icon green">
+                            <i class="bi bi-check-circle-fill"></i>
+                        </span>
+
+                        <div>
+                            <b>Dễ dàng sử dụng</b>
+                            <small>Thiết kế thân thiện</small>
+                        </div>
+                    </div>
+
+                    <div class="dots dots-bottom"></div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section-space">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-kicker">EDUSHEET CÓ GÌ?</span>
+
+                    <h2>
+                        Người bạn đồng hành của
+                        <span>giáo viên</span>
+                    </h2>
+
+                    <p>
+                        Các công cụ thiết thực giúp việc chuẩn bị phiếu học tập
+                        rõ ràng và thuận tiện hơn.
+                    </p>
+                </div>
+
+                <div class="benefit-grid">
+
+                    <article class="benefit-card reveal">
+
+                        <div class="benefit-icon icon-blue">
+                            <i class="bi bi-lightning-charge"></i>
+                        </div>
+
+                        <h3>Tạo phiếu nhanh chóng</h3>
+
+                        <p>
+                            Chọn môn học, khối lớp, chủ đề và số câu hỏi để tạo
+                            phiếu phù hợp với mục tiêu bài học.
+                        </p>
+
+                        <a href="generator.html">
+                            Thử tạo phiếu
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+                    <article class="benefit-card reveal">
+
+                        <div class="benefit-icon icon-yellow">
+                            <i class="bi bi-funnel"></i>
+                        </div>
+
+                        <h3>Lọc nội dung linh hoạt</h3>
+
+                        <p>
+                            Tìm câu hỏi theo môn, lớp và chủ đề để lựa chọn tài
+                            liệu cho từng tiết học.
+                        </p>
+
+                        <a href="categories.html">
+                            Xem danh mục
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+                    <article class="benefit-card reveal">
+
+                        <div class="benefit-icon icon-green">
+                            <i class="bi bi-printer"></i>
+                        </div>
+
+                        <h3>Xem trước và in phiếu</h3>
+
+                        <p>
+                            Kiểm tra nội dung phiếu, lựa chọn hiển thị đáp án
+                            và in tài liệu phục vụ giảng dạy.
+                        </p>
+
+                        <a href="generator.html">
+                            Tạo tài liệu
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="steps-section section-space">
+            <div class="container steps-layout">
+
+                <div class="steps-copy reveal">
+
+                    <span class="section-kicker">
+                        BẮT ĐẦU THẬT DỄ DÀNG
+                    </span>
+
+                    <h2>
+                        Ba bước để có<br>
+                        <span>phiếu bài tập</span>
+                    </h2>
+
+                    <p>
+                        Chọn nội dung, thiết lập số câu và xem trước phiếu của bạn.
+                    </p>
+
+                    <a href="generator.html" class="btn btn-primary">
+                        Bắt đầu tạo phiếu
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="steps-list">
+
+                    <div class="step reveal">
+
+                        <span class="step-number">01</span>
+
+                        <div>
+                            <h3>Chọn môn học và khối lớp</h3>
+                            <p>
+                                Lựa chọn nội dung phù hợp với lớp học và chủ đề
+                                cần ôn tập
+                            </p>
+                        </div>
+
+                        <i class="bi bi-book"></i>
+
+                    </div>
+
+                    <div class="step reveal">
+
+                        <span class="step-number">02</span>
+
+                        <div>
+                            <h3>Thiết lập phiếu bài tập</h3>
+                            <p>
+                                Chọn số lượng câu hỏi và cách hiển thị đáp án
+                            </p>
+                        </div>
+
+                        <i class="bi bi-sliders"></i>
+
+                    </div>
+
+                    <div class="step reveal">
+
+                        <span class="step-number">03</span>
+
+                        <div>
+                            <h3>Xem trước và in</h3>
+                            <p>
+                                Kiểm tra nội dung, sau đó in phiếu để sử dụng
+                            </p>
+                        </div>
+
+                        <i class="bi bi-printer"></i>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+
+                <div class="cta-box reveal">
+
+                    <div>
+                        <span class="section-kicker">
+                            SẴN SÀNG TRẢI NGHIỆM?
+                        </span>
+
+                        <h2>
+                            Chuẩn bị bài tập dễ dàng hơn<br>
+                            cùng EduSheet
+                        </h2>
+
+                        <p>
+                            Khám phá kho câu hỏi và tạo phiếu ôn tập theo nhu cầu
+                        </p>
+                    </div>
+
+                    <a href="generator.html" class="btn btn-white btn-large">
+                        Tạo phiếu ngay
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+
+            <a class="brand footer-brand" href="index.html">
+                <img src="images/logo-nhom7.png" alt="EduSheet Logo" class="brand-logo">
+                Edu<span class="brand-accent">Sheet</span>
+            </a>
+
+            <p>
+                Kho phiếu bài tập và đề ôn tập dành cho giáo viên
+            </p>
+
+            <small>
+                © 2026 EduSheet - Kho phiếu bài tập và đề ôn tập - Nhóm 7
+            </small>
+
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Lên đầu trang">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
+</body>
+
+</html>

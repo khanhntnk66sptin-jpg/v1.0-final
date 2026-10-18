@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Liên hệ | EduSheet</title>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="container nav-inner">
+
+                <a class="brand" href="index.html">
+                    <img src="images/logo-nhom7.png" alt="EduSheet Logo" class="brand-logo">
+                    EduSheet
+                </a>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Mở menu">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <div class="nav-menu" id="navMenu">
+
+                    <a class="nav-link" href="index.html">Trang chủ</a>
+                    <a class="nav-link" href="categories.html">Kho bài tập</a>
+                    <a class="nav-link" href="generator.html">Tạo phiếu</a>
+                    <a class="nav-link" href="faq.html">Hướng dẫn</a>
+                    <a class="nav-link" href="contact.html">Liên hệ</a>
+
+                    <a class="btn btn-primary nav-cta" href="generator.html">
+                        Bắt đầu ngay
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                    <div class="theme-switcher">
+                        <label for="themeSelect" class="visually-hidden">
+                            Chọn giao diện &nbsp; &nbsp;
+                        </label>
+
+                        <select id="themeSelect" class="theme-select" aria-label="Chọn giao diện">
+                            <option value="light">☀️ Sáng</option>
+                            <option value="dark">🌙 Tối</option>
+                            <option value="auto">🌓 Tự động</option>
+                        </select>
+                    </div>
+
+                    <div class="language-switcher">
+                        <label for="languageSelect" class="visually-hidden">
+                            Chọn ngôn ngữ
+                        </label>
+
+                        <select id="languageSelect" class="form-select form-select-sm" aria-label="Chọn ngôn ngữ">
+                            <option value="vi">Tiếng Việt</option>
+                            <option value="en">English</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="inner-page">
+
+        <section class="page-hero">
+            <div class="container page-hero-inner">
+                <div class="page-hero-text">
+
+                    <span class="section-kicker">
+                        KẾT NỐI VỚI EDUSHEET
+                    </span>
+
+                    <h1>
+                        Đóng góp &amp; <span>liên hệ</span>
+                    </h1>
+
+                    <p>
+                        Gửi câu hỏi mẫu, góp ý nội dung hoặc chia sẻ đề xuất để
+                        website ngày càng hữu ích hơn.
+                    </p>
+                </div>
+                <div class="page-hero-image">
+                    <img src="images/anh4.jpg" alt="ảnh 4">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container page-content contact-layout">
+
+            <div class="contact-info-card">
+
+                <span class="section-kicker">
+                    CHÚNG TÔI LUÔN LẮNG NGHE
+                </span>
+
+                <h2>
+                    Cùng xây dựng kho học liệu hữu ích
+                </h2>
+
+                <p class="muted">
+                    Bạn có thể gửi ý kiến đóng góp hoặc đề xuất câu hỏi để
+                    tham khảo trong quá trình học tập và giảng dạy
+                </p>
+
+                <div class="contact-detail">
+
+                    <span>
+                        <i class="bi bi-envelope"></i>
+                    </span>
+
+                    <div>
+                        <b>Email</b>
+                        <p>xxx@gmail.com</p>
+                    </div>
+
+                </div>
+
+                <div class="contact-detail">
+
+                    <span>
+                        <i class="bi bi-chat-dots"></i>
+                    </span>
+
+                    <div>
+                        <b>Góp ý nội dung</b>
+                        <p>
+                            Chia sẻ lỗi hoặc đề xuất cải thiện website.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="contact-detail">
+
+                    <span>
+                        <i class="bi bi-journal-plus"></i>
+                    </span>
+
+                    <div>
+                        <b>Đóng góp câu hỏi</b>
+                        <p>
+                            Gửi câu hỏi kèm môn học, lớp và chủ đề.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <form id="contactForm" class="form-card contact-form" novalidate>
+
+                <div class="card-heading">
+
+                    <span class="heading-icon">
+                        <i class="bi bi-send"></i>
+                    </span>
+
+                    <div>
+                        <h2>Gửi thông tin</h2>
+                        <p>Các trường có dấu * là bắt buộc.</p>
+                    </div>
+
+                </div>
+
+                <div class="field">
+
+                    <label for="name">Họ và tên *</label>
+
+                    <input id="name" type="text" placeholder="Nhập họ và tên của bạn">
+
+                </div>
+
+                <div class="field">
+
+                    <label for="email">Email *</label>
+
+                    <input id="email" type="email" placeholder="name@example.com">
+
+                </div>
+
+                <div class="field">
+
+                    <label for="contactTopic">
+                        Nội dung đóng góp
+                    </label>
+
+                    <select id="contactTopic">
+                        <option>Góp ý website</option>
+                        <option>Đóng góp câu hỏi</option>
+                        <option>Báo lỗi nội dung</option>
+                        <option>Khác</option>
+                    </select>
+
+                </div>
+
+                <div class="field">
+
+                    <label for="message">Nội dung chi tiết *</label>
+
+                    <textarea id="message" rows="5" placeholder="Nhập nội dung bạn muốn gửi..."></textarea>
+
+                </div>
+
+                <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+
+                <button type="submit" class="btn btn-primary btn-large full-width">
+                    Gửi thông tin
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+
+                <p class="form-hint">
+                    <i class="bi bi-info-circle"></i>
+                    Biểu mẫu demo chưa gửi dữ liệu đến máy chủ.
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+
+            <a class="brand footer-brand" href="index.html">
+                <img src="images/logo-nhom7.png" alt="EduSheet Logo" class="brand-logo">
+                Edu<span class="brand-accent">Sheet</span>
+            </a>
+
+            <p>
+                Kho phiếu bài tập và đề ôn tập dành cho giáo viên.
+            </p>
+
+            <small>
+                © 2026 EduSheet - Kho phiếu bài tập và đề thi ôn tập - Nhóm 7
+            </small>
+
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Lên đầu trang">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
+
+</body>
+
+</html>
